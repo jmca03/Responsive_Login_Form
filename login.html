@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <span class="brand"><a href="#">Dummy</a></span>
+        <span class="menu btn-nav" id="btn-menu">
+            <i class="fas fa-bars"></i>
+        </span>
+        <span class="close" id="btn-close">
+            <i class="fas fa-times"></i>
+        </span>
+        <ul class="hide-mobile" id="nav-list">
+            <li>
+                <a href="#">Service</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li id="">
+                <a href="#">
+                    <button id="btn-signin">Sign in</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section class="signin-img">
+            <p id="login-brand">Sign in</p>
+        </section>
+
+        <div class="signin-container">
+            <div id="alert-form" class="alert hide">
+                <p id="alert-txt">Login Failed</p>
+            </div>
+            <form action="" method="POST">
+                <div id="username-form-container" class="username-container">
+                    <label id="lbl-username" for="username">USERNAME</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div id="password-form-container" class="password-container">
+                    <label id="lbl-password" for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="btn-container">
+                    <div id="signin-form-container" class="sign-in-form">
+                        <input id="btn-form-signin" type="button" value="Sign in">
+                        <a href="#" id="forget-password">Forget Password?</a>
+                    </div>
+                    <div id="signout-form-container" class="sign-out-form hide">
+                        <input id="btn-form-signout" type="button" value="Sign out">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="footer-form-container" class="form-footer">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
+        
+        
+        <footer class="signin-footer">
+            <span class="footer-brand">Dummy</span>
+            <span class="footer-copyright">(C) Dummy.</span>
+        </footer>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
